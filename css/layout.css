@@ -9,10 +9,16 @@ body {
 
 header {
   grid-area: HEADER;
+  position: sticky;
+  top: 0;
 }
 
 nav.verticalNav {
   grid-area: VERTICALNAV;
+  position: fixed;
+  top: 43px;
+  bottom: 0;
+  width: 250px;
 }
 
 main {
@@ -31,6 +37,12 @@ footer {
       'MAIN'
       'FOOTER';
     grid-template-columns: auto;
+  }
+
+  nav.verticalNav {
+    /* position: static;
+    width: auto; */
+    display: none;
   }
 }
 
